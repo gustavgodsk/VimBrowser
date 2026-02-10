@@ -2,13 +2,29 @@
 
 Adds basic vim motions for quick navigation in the browser
 
+You can add the extension here: Chrome Webshop (soon) and Firefox (soon)
+
+# Keybindings
+```json
+left: "h",
+down: "j",
+up: "k",
+right: "l",
+history_back: "H",
+history_forward: "L",
+top: "gg",
+bottom: "G",
+reload: "r",
+remove_focus: "<Ctrl-c>"
+```
+
 # Configuration
 
 Click on the extension icon to configure keybindings etc.
 
 # Contributing
 
-**0.** Make a local copy of the project
+**1.** Make a local copy of the project
 ```bash
 git clone https://github.com/gustavgodsk/VimBrowser.git
 ```
