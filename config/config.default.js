@@ -1,5 +1,5 @@
 const DEFAULT_CONFIG = {
-    enabled: false,
+    enabled: true,
     keybindings: {
         left: "h",
         down: "j",
