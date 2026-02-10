@@ -1,91 +1,35 @@
-# <img src="./static/icons/icon128.png" align="absmiddle" width="100"> DAT2AU (browser extension)
+# <img src="./static/icons/icon128.png" align="absmiddle" width="100"> VimBrowser (browser extension)
 
-Quality of life improvements til datalogi på AU. Virker på Chrome og Firefox.
+Adds basic vim motions for quick navigation in the browser
 
-* **Mitstudie:** forbedret skema på [mitstudie.au.dk](https://mitstudie.au.dk)
-* **Panopto:** automatisk redirect til Embed view på [panopto](https://au.cloud.panopto.eu/Panopto/Pages/)
-* **Vim motions:** basic vim motions til navigation (skal selv aktiveres i options)
+# Configuration
 
-Du kan tilføje udvidelserne her: [Chrome Webshop](https://chromewebstore.google.com/detail/dat2au/ndbknejadmdkfgpgkjnlkgmcemfnaaja?hl=da) og Firefox (snart)
-
-<img width="1893" height="1035" alt="image" src="./static/images/screenshot.png" />
-
-# Tilpasning
-
-Tryk på extension-ikonet for at gå til config-siden.
+Click on the extension icon to configure keybindings etc.
 
 # Contributing
 
-**0.** Lav en lokal kopi af projektet
+**0.** Make a local copy of the project
 ```bash
-git clone https://github.com/gustavgodsk/DAT2AU.git
+git clone https://github.com/gustavgodsk/VimBrowser.git
 ```
 
-**1.** Opret ny fil `myscript.js` i `scripts/` mappen
+**2.** Make your changes
 
-Brug `scripts/template.js` til at komme i gang:
-```javascript
-{
-    function setup() {
-        if (!CONFIG.myscript.enabled) return;
-        //
-        // YOUR CODE HERE
-        //
-    }
+**3.** Submit a pull request on GitHub
 
-    window.addEventListener("configReady", () => {
-        setup();
-    });
+# Manual Installation
 
-    if (window.CONFIG) {
-        setup();
-    }
-}
-```
-
-**2.** Tilføj default config i `config/config.default.js`:
-
-```javascript
-const DEFAULT_CONFIG = {
-    // ...
-    myscript: {
-        enabled: true,
-        // add more options...
-    }
-}
-```
-
-**3.** Registrer script og URL matches i `manifest.json`
-```json
-"content_scripts": [
-    // previous scripts...
-    {
-        "js": [
-            "config/config.default.js",
-            "config/config.loader.js",
-            "scripts/myscript.js"
-        ],
-        "matches": ["https://example.com/*"]
-    },
-],
-```
-> Vigtigt: `config/config.default.js` og `config/config.loader.js` skal altid inkluderes i den rækkefølge for at dit script får adgang til config-filen
-
-**4.** Lav pull request på GitHub
-
-# Manuel Installation
-
-Download filerne og gem i mappe
+Download the files and save them in a folder.
 
 ### Chrome
-1. Gå til chrome://extensions i Chrome
-2. Sæt *Udviklertilstand* til oppe i højre hjørne
-3. Tryk *Indlæs upakket*
-4. Vælg mappen
-5. Tryk på genindlæs-pilen
+1. Go to chrome://extensions in Chrome.
+2. Toggle Developer mode on in the top right corner.
+3. Click Load unpacked.
+4. Select the folder.
+5. Click the Reload icon (the circular arrow).
 
 ### Firefox
-1. Gå til about:debugging#/runtime/this-firefox i Firefox
-2. Tryk *Læs midlertidig tilføjelse*
-3. Find mappen og vælg *manifest.json*
-4. Tryk *Genindlæs*
+1. Go to about:debugging#/runtime/this-firefox in Firefox.
+2. Click Load Temporary Add-on....
+3. Locate the folder and select manifest.json.
+4. Click Reload.
