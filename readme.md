@@ -21,6 +21,9 @@ You can add the extension here: Chrome Webshop (soon) and Firefox (soon)
 }
 ```
 
+**TODO**
+- [] /: find (similar to ctrl+f)
+
 # Configuration
 
 Click on the extension icon to configure keybindings etc.
