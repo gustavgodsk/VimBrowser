@@ -17,6 +17,7 @@ You can add the extension here: Chrome Webshop (soon) and Firefox (soon)
     bottom: "G",
     reload: "r",
     remove_focus: "<Ctrl-c>"
+    // You can add more here...
 }
 ```
 
