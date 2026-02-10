@@ -22,7 +22,7 @@ You can add the extension here: Chrome Webshop (soon) and Firefox (soon)
 ```
 
 **TODO**
-- [] /: find (similar to ctrl+f)
+- [ ] search: "/" (similar to ctrl+f)
 
 # Configuration
 
