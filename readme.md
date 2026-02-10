@@ -5,17 +5,19 @@ Adds basic vim motions for quick navigation in the browser
 You can add the extension here: Chrome Webshop (soon) and Firefox (soon)
 
 # Keybindings
-```json
-left: "h",
-down: "j",
-up: "k",
-right: "l",
-history_back: "H",
-history_forward: "L",
-top: "gg",
-bottom: "G",
-reload: "r",
-remove_focus: "<Ctrl-c>"
+```javascript
+{
+    left: "h",
+    down: "j",
+    up: "k",
+    right: "l",
+    history_back: "H",
+    history_forward: "L",
+    top: "gg",
+    bottom: "G",
+    reload: "r",
+    remove_focus: "<Ctrl-c>"
+}
 ```
 
 # Configuration
