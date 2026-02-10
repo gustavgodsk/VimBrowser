@@ -32,9 +32,11 @@ Click on the extension icon to configure keybindings etc.
 git clone https://github.com/gustavgodsk/VimBrowser.git
 ```
 
-**2.** Make your changes
+**2.** Make your changes to `scripts/vimmotions.js`
 
-**3.** Submit a pull request on GitHub
+**3.** Test changes locally by refreshing the script at `chrome://extensions` (Chrome) or `about:debugging#/runtime/this-firefox` (Firefox)
+
+**4.** Submit a pull request on GitHub
 
 # Manual Installation
 
